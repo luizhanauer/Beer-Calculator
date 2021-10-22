@@ -28,35 +28,35 @@
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
-						<th class="p-3 text-left">Preço Total</th>
+						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
 					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
-						<th class="p-3 text-left">Preço Total</th>
+						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
 					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
-						<th class="p-3 text-left">Preço Total</th>
+						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
 					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
-						<th class="p-3 text-left">Preço Total</th>
+						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
 					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
-						<th class="p-3 text-left">Preço Total</th>
+						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
 				</thead>
 				<tbody class="flex-1 sm:flex-none">
@@ -71,7 +71,7 @@
 							R$ | 4 un.
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<b>1076</b>
+							<b>1076 ml</b>
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="fprice269">
 							<b>R$ 0.00</b>
@@ -88,7 +88,7 @@
 							R$ | 3 un.
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<b>1050</b>
+							<b>1050 ml</b>
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="fprice350">
 							<b>R$ 0.00</b>
@@ -105,7 +105,7 @@
 							R$ | 2 un.
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<b>1100</b>
+							<b>1100 ml</b>
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="fprice550">
 							<b>R$ 0.00</b>
@@ -122,7 +122,7 @@
 							R$ | 2 un.
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<b>1200</b>
+							<b>1200 ml</b>
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="fprice600">
 							<b>R$ 0.00</b>
@@ -130,7 +130,7 @@
 					</tr>
 					<tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input class="flex-1  rounded-md border border-gray-300 outline-none focus:bg:white" type="number" id="mlCustom" max="1000" min="1"  value="1">
+							<input class="flex-1  rounded-md border border-gray-300 outline-none focus:bg:white" type="number" id="mlCustom" max="1000" min="1"  value="1000">
 							ml
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
@@ -174,10 +174,12 @@
 
 	td:not(:last-child) {
 		border-bottom: 0;
+		 white-space: nowrap;
 	}
 
 	th:not(:last-child) {
 		border-bottom: 2px solid rgba(0, 0, 0, .1);
+		 white-space: nowrap;
 	}
 </style>
 
@@ -202,11 +204,10 @@
 			outprice600 = (price600 / 600) * 1000;
 			outpriceCustom = (priceCustom / mlCustom) * 1000;
 
-			document.getElementById("out269").value = outprice269.toFixed(2);
-			document.getElementById("out350").value = outprice350.toFixed(2);
-			document.getElementById("out550").value = outprice550.toFixed(2);
-			document.getElementById("out600").value = outprice600.toFixed(2);
-			document.getElementById("outCustom").value = outpriceCustom.toFixed(2);
+			document.getElementById("out269").innerHTML = 'R$ '+outprice269.toFixed(2)+' | 4 un.';
+			document.getElementById("out350").innerHTML = 'R$ '+outprice350.toFixed(2)+' | 3 un.';
+			document.getElementById("out550").innerHTML = 'R$ '+outprice550.toFixed(2)+' | 2 un.';
+			document.getElementById("out600").innerHTML = 'R$ '+outprice600.toFixed(2)+' | 2 un.';
 
 			fprice269 = (price269 * 4);
 			fprice350 = (price350 * 3);
@@ -223,8 +224,8 @@
 
 			fmlCustom = (mlCustom * qtd);
 
-			document.getElementById("fmlCustom").innerHTML = '<b> '+fmlCustom+'</b>';
-			document.getElementById("outCustom").innerHTML = ' R$ <input type="number" readonly="false" id="outCustom" value="'+outpriceCustom.toFixed(2)+'"> | '+qtd+' un.';
+			document.getElementById("fmlCustom").innerHTML = '<b> '+fmlCustom+' ml</b>';
+			document.getElementById("outCustom").innerHTML = ' R$ '+outpriceCustom.toFixed(2)+'| '+qtd+' un.';
 		}
 
 	}
