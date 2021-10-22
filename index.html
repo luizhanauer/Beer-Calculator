@@ -2,18 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Beer</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-indigo-100">
-	<div class="bg-blue-400 lg:flex lg:items-center p-12 w-full flex flex-row flex-no-wrap">
+<body class="">
+	<div class="bg-gradient-to-r from-blue-900 to-blue-300 lg:flex lg:items-center p-12 w-full flex flex-row flex-no-wrap">
 		<div class="flex-grow">
 			<h1 class="text-white text-center text-2xl sm:text-5xl mb-2">
 				My Beer
 			</h1>
-			<p class="text-center text-blue-100 sm:text-lg">
+			<p class="text-center text-white sm:text-lg">
 				Calcule sua bebida para encontrar o melhor preço!
 			</p>
 		</div>
@@ -23,35 +25,35 @@
 		<div class="container" >
 			<table class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
 				<thead class="text-white">
-					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+					<tr class="bg-blue-900 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
 						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
-					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+					<tr class="bg-blue-900 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
 						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
-					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+					<tr class="bg-blue-900 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
 						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
-					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+					<tr class="bg-blue-900 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
 						<th class="p-3 text-left">ml Total</th>
 						<th class="p-3 text-left" width="180px">Preço Total</th>
 					</tr>
-					<tr class="bg-blue-800 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+					<tr class="bg-blue-900 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
 						<th class="p-3 text-left">Tamanho</th>
 						<th class="p-3 text-left">Preço Unitário</th>
 						<th class="p-3 text-left">Preço Litro</th>
@@ -65,7 +67,7 @@
 							269 ml
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 outline-none focus:bg:white" placeholder="R$ 0,00" id="price269">
+							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 shadow-md outline-none focus:bg:white" placeholder="R$ 0,00" id="price269">
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="out269">
 							R$ | 4 un.
@@ -82,7 +84,7 @@
 							350 ml
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 outline-none focus:bg:white" placeholder="R$ 0,00" id="price350">
+							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 shadow-md outline-none focus:bg:white" placeholder="R$ 0,00" id="price350">
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="out350">
 							R$ | 3 un.
@@ -99,7 +101,7 @@
 							550 ml
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 outline-none focus:bg:white" placeholder="R$ 0,00" id="price550">
+							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 shadow-md outline-none focus:bg:white" placeholder="R$ 0,00" id="price550">
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="out550">
 							R$ | 2 un.
@@ -116,7 +118,7 @@
 							600 ml
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 outline-none focus:bg:white" placeholder="R$ 0,00" id="price600">
+							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 shadow-md outline-none focus:bg:white" placeholder="R$ 0,00" id="price600">
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="out600">
 							R$ | 2 un.
@@ -130,11 +132,11 @@
 					</tr>
 					<tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input class="flex-1  rounded-md border border-gray-300 outline-none focus:bg:white" type="number" id="mlCustom" max="1000" min="1"  value="1000">
+							<input class="flex-1  rounded-md border border-gray-300 shadow-md outline-none focus:bg:white" type="number" id="mlCustom" max="1000" min="1"  value="1000">
 							ml
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3">
-							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 outline-none focus:bg:white" placeholder="R$ 0,00" id="priceCustom">
+							<input type="number" class="flex-1 w-full rounded-md border border-gray-300 shadow-md outline-none focus:bg:white" placeholder="R$ 0,00" id="priceCustom">
 						</td>
 						<td class="border-grey-light border hover:bg-gray-100 p-3" id="outCustom">
 							R$ | ? un.
@@ -151,7 +153,7 @@
 		</div>
 	</div>
 	<div class="flex items-center justify-center">
-		<button type="button" class="flex-shrink-1 bg-blue-800 hover:bg-blue-900 outline-none py-4 px-8 text-white font-semibold rounded-full" onclick="calc();">
+		<button type="button" class="flex-shrink-1 bg-blue-900 hover:bg-blue-900 outline-none py-4 px-8 text-white font-semibold rounded-full" onclick="calc();">
 			Comparar
 		</button>
 	</div>
@@ -195,8 +197,7 @@
 		let qtd = 0;
 
 		if (mlCustom > 1000 || mlCustom <= 0) {
-			window.alert('Limite de 1 até 1000 ml!');
-
+			window.alert('Limite de tamanho é 1 até 1000 ml!');
 		}else{
 			outprice269 = (price269 / 269) * 1000;
 			outprice350 = (price350 / 350) * 1000;
@@ -227,7 +228,6 @@
 			document.getElementById("fmlCustom").innerHTML = '<b> '+fmlCustom+' ml</b>';
 			document.getElementById("outCustom").innerHTML = ' R$ '+outpriceCustom.toFixed(2)+'| '+qtd+' un.';
 		}
-
 	}
 </script>
 
