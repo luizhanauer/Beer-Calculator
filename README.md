@@ -71,7 +71,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 Créditos
 --------
 
-Este aplicativo foi desenvolvido por Luiz Hanauer. Ele foi criado usando HTML, CSS, JavaScript e a biblioteca Clipboard.js. Agradecimentos especiais à equipe do [Tailwind CSS](https://tailwindcss.com/) por fornecer o framework CSS utilizado neste projeto.
+Este aplicativo foi desenvolvido por Luiz Hanauer e Matheus Tiecher. Ele foi criado usando HTML, CSS, JavaScript e a biblioteca Clipboard.js. Agradecimentos especiais à equipe do [Tailwind CSS](https://tailwindcss.com/) por fornecer o framework CSS utilizado neste projeto.
 
 
 Contribuição
